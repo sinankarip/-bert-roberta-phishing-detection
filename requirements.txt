@@ -1,5 +1,0 @@
-numpy
-pandas
-lightgbm
-transformers
-gradio
