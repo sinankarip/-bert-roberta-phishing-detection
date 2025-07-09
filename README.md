@@ -24,6 +24,30 @@ Model & Training Process
 
     The F1 score plateaued around 98%.
 
+How to Use
+Clone Only the app.ipynb Notebook via Sparse Checkout
+
+To avoid cloning the entire repository and fetch only the app.ipynb file, follow these steps:
+
+mkdir bert-phishing-detection && cd bert-phishing-detection
+git init
+git remote add origin https://github.com/sinankarip/-bert-roberta-phishing-detection.git
+git config core.sparseCheckout true
+echo "app.ipynb" >> .git/info/sparse-checkout
+git pull origin main
+
+Setup and Run
+
+    Open the app.ipynb file in Jupyter Notebook.
+
+    In the first cell, install the required packages by running:
+
+!pip install -r https://raw.githubusercontent.com/sinankarip/-bert-roberta-phishing-detection/main/requirements.txt
+
+    Execute the remaining cells in order to run the application.
+
+
+
 Evaluation
 Email Type	Accuracy	Notes
 Classic Phishing	99% detection	Link presence and urgency are decisive.
