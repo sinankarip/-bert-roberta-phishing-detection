@@ -1,5 +1,12 @@
 # -bert-roberta-phishing-detection
 
+Dataset
+
+The dataset used for training and evaluation is included in the repository as archive.zip.
+
+The original source of the dataset can be found on Kaggle:
+https://www.kaggle.com/datasets/subhajournal/phishingemails
+
 Phishing Detection Model
 
 Extensive feature engineering was performed, incorporating various types of features to improve the model. However, the F1 score plateaued around 98%, so to avoid unnecessary computational overhead, only BERT embeddings and RoBERTa sentiment vectors were retained.
